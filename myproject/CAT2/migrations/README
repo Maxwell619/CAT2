@@ -1,0 +1,49 @@
+# Django Customer and Order Management
+
+## Overview
+This project implements a simple Django application with `Customer` and `Order` models. Each customer can place multiple orders, while each order belongs to a single customer.
+
+## Features
+- One-to-many relationship between `Customer` and `Order`.
+- Fields:
+  - **Customer**: `name`, `email`, `created_at`.
+  - **Order**: `customer`, `order_date`, `total_amount`, `created_at`.
+
+---
+
+## Setting Up the Environment
+### Steps
+1. **Clone the repository**:
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2. **Set up a virtual environment**:
+    ```bash
+    python -m venv venv
+   .\.venv\Scripts.\Activates.ps1
+    ```
+
+3. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Apply migrations**:
+    ```bash
+    python manage.py migrate
+    ```
+
+5. **Run the development server**:
+    ```bash
+    python manage.py runserver
+    ```
+
+6. **Access the application**:
+    Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
+
+---
+
+## Directory Structure
+
